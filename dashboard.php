@@ -22,7 +22,7 @@
       
       /* Style the table headers */
       th {
-        background-color: #4CAF50;
+        background-color:#337357;
         color: white;
         text-align: left;
         padding: 8px;
@@ -51,13 +51,24 @@
       tr:hover {
         background-color: #ddd;
       }
+      .btn , .btn2{
+    background-color:#337357;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 5px;
+    font-size: 10px;
+    
     </style>
   </head>
   <body style="background-color:rgb(46,71,93);">
     <center><h1 Style="color:rgb(221,221,221);font-family:impact (sans-serif);">ADMIN DASHBOARD</h1></center>
-    <a href="delete.html"><button>Clear Dashboard</button></a>
-    <a href="./user/editor.html"><button>Image Editor</button></a>
-
+    <div class="btns"><a href="delete.html"><button class="btn">Clear Dashboard</button></a>
+    <a href="./user/editor.html"><button class="btn2">Image Editor</button></a>
+    </div>
     <?php
       // Open the log file for reading
       $log_file = fopen("./user/log.txt", "r");
